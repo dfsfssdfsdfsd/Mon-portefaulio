@@ -1,0 +1,131 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    list-style: none;}
+html{ scroll-behavior: smooth;}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.9s;
+  padding-top: 60px;
+  text-align:center;
+}
+.sidenav a {
+  text-transform: capitalize;
+  white-space: nowrap;
+  margin:0 auto calc( 70vh / 6 - 50px);
+  text-decoration: none;
+  font-size: 50px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 36px;
+  
+}
+.open-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 50px;
+}
+.sidenav a:not(.closebtn) {
+  width: calc(100% - 70%);
+  
+}
+body {
+  background-color: #111;
+}
+.sidenav>a:hover,
+.open-btn:hover{
+  color: #00E029;
+  text-transform: uppercase; 
+  transition: 0.4s;
+}
+.sidenav a:not(.closebtn):hover {
+  transform: scale(1.2);
+  filter: drop-shadow(3px 3px 5px #FFF);
+}
+
+/* INDEX */
+header{
+  color: #FFF;
+  display: flex;
+  justify-content:center ;
+}
+.page-title {
+  font-family: 'Fira Sans Condensed';
+  padding: 2em 0;
+  font-weight: bolder;
+  text-decoration:underline;
+  text-underline-offset: 0.4em;
+  position: relative;
+  padding-top: 20px;
+}
+
+article {
+  display:flex;
+  flex-direction:column;
+  align-items: left;
+  padding-left: 70px;
+  padding-top: 50px;
+}
+.module-border-wrap {
+  
+  width: fit-content;
+  max-width: 600px;
+  height: fit-content;
+  padding: 1rem;
+  position: relative;
+  background-image:linear-gradient(to right top, #211bfc, #b100c9, #e00095, #f00068, #ef0045, #f32f34, #f34921, #f15f00, #f98600, #faab00, #f7d000, #edf30e);
+  padding: 3px;
+  box-shadow: 10px 10px 15px #F8F6DE;
+
+}
+
+.module {
+  text-decoration: none;
+  background: #222;
+  color: white;
+  padding: 15px;
+}
+.module>img {
+  filter: drop-shadow(0px 2px 0 #B1BEFF) 
+          drop-shadow(-2px -1px 0 #B1BEFF)
+          drop-shadow(2px 0 0 #B1BEFF);
+  shape-outside:margin-box ;
+  margin: 0 5px;
+  float: left;
+  width: 64px;
+  height: auto;
+}
+.module::after {
+  content: "";
+  display: block;
+  clear: both;}
+  .module {
+    text-align:justify ;
+    text-align-last:center ;
+  }
+.html-acceuil-link {
+  color: inherit;
+}
+.big-title {
+  color: #FFF;
+  padding-bottom: 15px;
+  font-family: 'Fira Sans Condensed';
+  text-align: center;
+  max-width: 600px;
+}
