@@ -56,7 +56,7 @@ body {
 }
 .sidenav a:not(.closebtn):hover {
   transform: scale(1.2);
-  filter: drop-shadow(3px 3px 5px #FFF);
+
 }
 
 /* INDEX */
