@@ -1,4 +1,5 @@
-// Vive Monsieur Hachem , cette partie sert pour l'animation de transition du menue
+// Vive Monsieur Hachem 
+// Cette partie sert pour l'animation de transition du menue
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
   }
